@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+#services {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 1;
+    }
+  
+    .nav-links.active li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+.service {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .service {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9231751872211841"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo"><b> <img src="/k.png" width="60"></img></b></div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.htm">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="menu-toggle">menu</div>
+        </nav>
+        
+        <script>
+          document.querySelector('.menu-toggle').addEventListener('click', function() {
+            var navLinks = document.querySelector('.nav-links');
+            if (navLinks.style.display === 'block') {
+              navLinks.style.display = 'none';
+            } else {
+              navLinks.style.display = 'block';
+            }
+          });
+        </script>
+        </header>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <img src="R (10).png" alt="Service 1">
+            <h3>Custom Wallpapers</h3>
+            <p>We offer custom wallpaper designs tailored to your preferences. Whether you're looking for a unique pattern or a personalized photo, we can create the perfect wallpaper for you.</p>
+        </div>
+        <div class="service">
+            <img src="R (12).png" alt="Service 2">
+            <h3>High-Quality Prints</h3>
+            <p>Our wallpapers are printed using the latest technology to ensure high-quality prints with vibrant colors and sharp details. Your wallpaper will look stunning on any screen.</p>
+        </div>
+        <div class="service">
+            <img src="R (15).png" alt="Service 3">
+            <h3>Fast Delivery</h3>
+            <p>We understand that you want your wallpaper as soon as possible. That's why we offer fast and reliable delivery options to get your wallpaper to you in no time.</p>
+        </div>
+    </section>
+</body>
+</html>

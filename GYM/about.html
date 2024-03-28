@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+#about {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 1;
+    }
+  
+    .nav-links.active li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #about {
+        padding: 10px;
+    }
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9231751872211841"
+     crossorigin="anonymous"></script>
+     
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo"><b> <img src="/k.png" width="60"></img></b></div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.htm">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="menu-toggle">menu</div>
+        </nav>
+        
+        <script>
+          document.querySelector('.menu-toggle').addEventListener('click', function() {
+            var navLinks = document.querySelector('.nav-links');
+            if (navLinks.style.display === 'block') {
+              navLinks.style.display = 'none';
+            } else {
+              navLinks.style.display = 'block';
+            }
+          });
+        </script>
+        </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to our wallpaper website! We are dedicated to providing high-quality wallpapers for your desktop and mobile devices. Our mission is to inspire and enhance your digital experience with beautiful and captivating wallpapers.</p>
+        <p>Our website was founded in [year] with the vision of creating a platform where users can find a wide variety of wallpapers to suit their preferences. Whether you're looking for nature landscapes, abstract art, or minimalist designs, we have a collection that will cater to your taste.</p>
+        <p>At our core, we believe that wallpapers should not only decorate your screens but also evoke emotions and spark creativity. That's why we carefully curate our collection to ensure that each wallpaper is not just a picture, but a piece of art that speaks to you.</p>
+      </section>
+</body>
+</html>
